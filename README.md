@@ -25,7 +25,6 @@ The 4X1 multiplexer comprises 4-input bits, 1- output bit, and 2- control bits. 
 Figure2 4X1 multiplexer 
 If the control input is changed to 11, then all gates are restricted except the bottom AND gate. In this case, D3 is transmitted to the output, and q=D0. If the control input is changed to AB =11, all gates are disabled except the bottom AND gate. In this case, D3 is transmitted to the output, and q = D3. The best example of a 4X1 multiplexer is IC 74153. In this IC, the o/p is the same as the i/p. Another example of a 4X1 multiplexer is IC 45352. In this IC, the o/p is the compliment of the i/p
 
-
 ## What is Demultiplexer?
 De-multiplexer is also a device with one input and multiple output lines. It is used to send a signal to one of the many devices. The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.
 ![image](https://user-images.githubusercontent.com/36288975/170912606-a30e4b74-1726-4430-b245-2c3c3d9c232d.png)
@@ -43,7 +42,6 @@ When the control i/p AB = 01, the upper second AND gate is permitted while the r
 If the data bit D is low, the output Y1 is low. IF data bit D is high, the output Y1 is high. The value of the output Y1 depends upon the value of data bit D, the remaining outputs are in a low state.
 
 If the control input changes to AB = 10, then all the gates are restricted except the third AND gate from the top. Then, data bit D is transmitted only to the output Y2; and, Y2 = Data. . The best example of 1X4 demultiplexer is IC 74155.
-
  
  
 ### Procedure
@@ -84,7 +82,6 @@ or (Y,P,Q,R,S);
 endmodule
 
 
-
 ### DE-MUX
 
 
@@ -106,7 +103,6 @@ endmodule
 ![IMG](https://github.com/22009071/Exercise-07-Multiplexer-and-De-multiplexer/raw/main/muxrtl.png)
 ### DE-MUX
 ![IMG](https://github.com/22009071/Exercise-07-Multiplexer-and-De-multiplexer/raw/main/demuxrtl.png)
-
 
 ### TIMING DIGRAMS  
 ### MUX
