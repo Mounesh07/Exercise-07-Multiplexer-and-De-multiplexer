@@ -46,17 +46,17 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
 ### Procedure
 
-          Start the module using module projname().
+         1. Start the module using module projname().
 
-          Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
+         2. Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
 
-          Use wire to assign intermediate outputs.
+         3. Use wire to assign intermediate outputs.
 
-          Use and, or and not gates to get the desired output
+         4. Use and, or and not gates to get the desired output
 
-          End the module
+         5. End the module
 
-          Generate RTL realization and timing diagram.
+         6. Generate RTL realization and timing diagram.
 
 ### PROGRAM
 ### MUX
@@ -67,7 +67,7 @@ Program for multiplexer  and verify its truth table in quartus using Verilog pro
 Developed by: MOUNESH P
 
 RegisterNumber:  212222230084
-*/
+```
 module mux(I0,I1,I2,I3,S0,S1,Y);
 input I0,I1,I2,I3,S0,S1;
 output Y;
@@ -80,11 +80,11 @@ and (R,S0,S1C,I2);
 and (S,S0,S1,I3);
 or (Y,P,Q,R,S);
 endmodule
-
+```
 
 ### DE-MUX
 
-
+```
 module demux(Y0,Y1,Y2,Y3,S0,S1,I);
 input S0,S1,I;
 output Y0,Y1,Y2,Y3;
@@ -96,7 +96,8 @@ and(Y1,I,S0C,S1);
 and(Y2,I,S0,S1C);
 and(Y3,I,S0,S1);
 endmodule
-
+```
+*/
 ### RTL LOGIC  
 ### MUX
 
